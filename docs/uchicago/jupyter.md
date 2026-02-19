@@ -21,7 +21,7 @@ notebook:
 6. You can select a GPU model based on its memory size. If you request a GPU,
    please make sure the GPU is available, by clicking on the icon next to GPU
    memory.
-7. You can choose any Docker image from the dropdown.
+7. You can choose a Docker image from the dropdown.
 
 ## Resource Limitations
 
@@ -43,43 +43,44 @@ A user can request 0 to 7 GPU instances as a resource for the notebook. A user
 can request 40,836 MB of memory for an entire A100 GPU, or 4864 MB of memory for
 a MIG instance.
 
-## Selecting a Docker image
+## Docker Images
 
-Users can choose from a few images:
+### ml_platform
 
-- `ml_platform:latest` - Based on NVIDIA image, it has most of the ML packages
-  (Tensorflow, Keras, ScikitLearn,...) preinstalled, and a small tutorial with
-  example codes in /ML_platform_tests/tutorial, it supports NVidia GPUs and has
-  ROOT preinstalled.
-- `ml_platform:conda` - comes with full anaconda.
-- `ml_platform:julia` - with Julia programming language
-- `ml_platform:lava` - with Intel Lava neuromorphic computing framework
-- `ml_platform:centos`
-- `AB-stable` - based on AnalysisBase
-- `AB-dev` - based on AnalysisBase but with cutting edge uproot, dask, awkward
+The primary image available is `ml_platform`, a comprehensive machine learning
+platform that includes:
+
+- **Python 3.12** with ML frameworks (TensorFlow, Keras, scikit-learn)
+- **ROOT 6.32+** for HEP analysis
+- **JupyterLab** with extensions (RISE, Git integration, ipywidgets)
+- **HEP tools** (uproot, atlasify, rucio-jupyterlab)
+- **NVIDIA GPU support** (CUDA 13.0)
+- Data science libraries (NumPy, Pandas, SciPy, PyArrow, HDF5)
+
+**Available tags:**
+- `ml_platform:latest` - Latest stable version (recommended)
+- `ml_platform:YYYY.MM` - Specific (older) release versions
+
+For the complete list of packages, version information, and detailed documentation,
+see the [ml_platform repository](https://github.com/maniaclab/ml_platform).
+
+### AnalysisBase Images
+
+- **AB-stable** - Based on AnalysisBase
+- **AB-dev** - Based on AnalysisBase but with cutting edge uproot, dask, awkward
   arrays, etc.
 
-For software additions and upgrades please
-[contact the UChicago facility team](../getting_help.md#facility-specific-support).
+/// note | Other Images
 
-## Tutorials
+Additional images may be available in the dropdown menu. Contact the facility
+team if you need a specific software environment not provided by these images.
 
-Basic usage of the platform can be experienced by running the set of tutorials
-that come preinstalled with both **latest** and **conda** image.
-
-### Running in conda
-
-To run tutorial in conda environment, one first has to initialize conda. Simply
-open a jupyter lab terminal, and execute: **conda init**. Close that terminal
-and open a new one. This will drop you in **(base)** conda environment. You may
-now switch to a HEP relevant environment by executing: conda activate
-**codas-hep**.
+///
 
 ## Getting help
 
-/// note | Need help?
+For software additions, upgrades, or questions about the JupyterLab environment:
 
-See our [Getting Help](../getting_help.md) page for support options and how to
-reach the ATLAS AF team.
-
-///
+- See our [Getting Help](../getting_help.md) page for support options
+- [Contact the UChicago facility team](../getting_help.md#facility-specific-support)
+- [Open an issue](https://github.com/maniaclab/ml_platform/issues) for ml_platform image problems
