@@ -129,4 +129,12 @@ reach the ATLAS AF team.
 
     [:octicons-arrow-right-24: Find Answers](faqs_tips.md)
 
+- :material-robot-happy:{ .lg .middle } **Claude Code Skills**
+
+    ***
+
+    AI workflow assistant skills for Claude Code users
+
+    [:octicons-arrow-right-24: Browse Skills](https://github.com/usatlas/marketplace)
+
 </div>
