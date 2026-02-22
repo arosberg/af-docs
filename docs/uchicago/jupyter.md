@@ -58,11 +58,13 @@ platform that includes:
 - Data science libraries (NumPy, Pandas, SciPy, PyArrow, HDF5)
 
 **Available tags:**
+
 - `ml_platform:latest` - Latest stable version (recommended)
 - `ml_platform:YYYY.MM` - Specific (older) release versions
 
-For the complete list of packages, version information, and detailed documentation,
-see the [ml_platform repository](https://github.com/maniaclab/ml_platform).
+For the complete list of packages, version information, and detailed
+documentation, see the
+[ml_platform repository](https://github.com/maniaclab/ml_platform).
 
 ### AnalysisBase Images
 
@@ -83,4 +85,5 @@ For software additions, upgrades, or questions about the JupyterLab environment:
 
 - See our [Getting Help](../getting_help.md) page for support options
 - [Contact the UChicago facility team](../getting_help.md#facility-specific-support)
-- [Open an issue](https://github.com/maniaclab/ml_platform/issues) for ml_platform image problems
+- [Open an issue](https://github.com/maniaclab/ml_platform/issues) for
+  ml_platform image problems
