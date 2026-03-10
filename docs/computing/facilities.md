@@ -36,11 +36,10 @@ and batch), Jupyter notebooks with a container images created for machine
 learning applications, and columnar reserearch tools ServiceX and Coffea. It
 provides 1PB of local disk storage, approximately 2800 CPU cores with potential
 flocking to MWT2 cores for "portable" jobs. Each user starts with 5TB of storage
-in
-$DATA (which can be raised up to 10TB), and 100GB in your /home directory ($HOME).
-UChicago is available to all U.S. ATLAS members and their international
-collaborators. Authentication is provided with either your home institution or
-CERN identity.
+in `$DATA` (which can be raised up to 10TB), and 100GB in your /home directory
+(`$HOME`). UChicago is available to all U.S. ATLAS members and their
+international collaborators. Authentication is provided with either your home
+institution or CERN identity.
 
 ### Stanford Linear Accelerator Center (SLAC)
 
