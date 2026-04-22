@@ -171,7 +171,7 @@ toggle.name = "Switch to light mode"
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/kratsg/stare"
+link = "https://github.com/usatlas/af-docs"
 
 # All default markdown extensions are reproduced here to add snippets support.
 # Emoji generator/index resolved from zensical.extensions.emoji (not material).
