@@ -21,8 +21,8 @@ To avoid the above trouble, you can:
 ### Sharing the same kerberos token among the home clusters
 
 By default, the kerberos token is cached locally on each individual machine, and
-you have to run `kinit` each time on a different node. If those machines share the
-same home directory, you can define the envvar `KRB5CCNAME` to
+you have to run `kinit` each time on a different node. If those machines share
+the same home directory, you can define the envvar `KRB5CCNAME` to
 `$HOME/krb5cc_$(id -u)` prior to running `kinit`. So you would have a valid
 kerberos token on other machines too.
 
@@ -42,13 +42,13 @@ used for multiple kerberos pricipals. That is:
 export KRB5CCNAME=DIR:$HOME/.krb5cc
 ```
 
-Please note the prefix `DIR:` before the directory name. And you need create
-the directory `$HOME/.krb5cc` in advance.
+Please note the prefix `DIR:` before the directory name. And you need create the
+directory `$HOME/.krb5cc` in advance.
 
 ### How to set up python3 env from CVMFS?
 
-Run `showVersions python` after the ALRB setup (that is, running
-`setupATLAS`). It will show the available python versions on CVMFS.
+Run `showVersions python` after the ALRB setup (that is, running `setupATLAS`).
+It will show the available python versions on CVMFS.
 
 Then you can pick up one suitable for you, says, `3.8.8-x86_64-centos7`. So you
 can run `lsetup "python 3.8.8-x86_64-centos7"` to set up that python3.
